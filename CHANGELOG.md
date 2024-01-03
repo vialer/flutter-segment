@@ -1,3 +1,10 @@
+## 3.13.4
+- iOS fixes
+
+## 3.13.3
+- Update README
+- Updated package name
+
 ## 3.13.2
 - Update README with no longer maintaining message
 

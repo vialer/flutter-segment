@@ -1,10 +1,10 @@
 name: flutter_segment_sdk
 description: Flutter implementation of Segment Analytics for iOS, Android and Web
-version: 3.13.2
+version: 3.13.4
 homepage: https://vialerapp.com
-repository: https://github.com/vialer/flutter-library-segment
-issue_tracker: https://github.com/vialer/flutter-library-segment/issues
-documentation: https://github.com/vialer/flutter-library-segment#readme
+repository: https://github.com/vialer/flutter-segment
+issue_tracker: https://github.com/vialer/flutter-segment/issues
+documentation: https://github.com/vialer/flutter-segment#readme
 
 environment:
   sdk: '>=2.12.0 <4.0.0'
