@@ -13,7 +13,7 @@ dependencies:
   cupertino_icons: ^1.0.3
   flutter:
     sdk: flutter
-  flutter_segment:
+  flutter_segment_sdk:
     path: ../
 
 dev_dependencies:

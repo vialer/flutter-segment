@@ -1,8 +1,8 @@
 # Segment plugin
-[![Pub Version](https://img.shields.io/pub/v/flutter_segment)](https://pub.dev/packages/flutter_segment)
+[![Pub Version](https://img.shields.io/pub/v/flutter_segment)](https://pub.dev/packages/flutter_segment_sdk)
 [![style: lint](https://img.shields.io/badge/style-lint-4BC0F5.svg)](https://pub.dev/packages/lint)
 
-This library was created by our friends at [claimsforce-gmbh](https://github.com/claimsforce-gmbh) to whom we are deeply grateful for letting us contribute. From now this project will be maintained from this repository.
+This library was originally created by [claimsforce-gmbh](https://github.com/claimsforce-gmbh) and then maintained by [la-haus](https://github.com/la-haus). We are extremely grateful for the work they have done building and maintaining this package.
 
 Flutter plugin to support iOS, Android and Web sources at https://segment.com.
 

@@ -1,8 +1,8 @@
 // ignore_for_file: avoid_print
 
 import 'package:flutter/services.dart';
-import 'package:flutter_segment/src/segment_config.dart';
-import 'package:flutter_segment/src/segment_platform_interface.dart';
+import 'package:flutter_segment_sdk/src/segment_config.dart';
+import 'package:flutter_segment_sdk/src/segment_platform_interface.dart';
 
 const MethodChannel _channel = MethodChannel('flutter_segment');
 

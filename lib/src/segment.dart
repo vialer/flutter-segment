@@ -1,11 +1,11 @@
 import 'dart:io';
 
-import 'package:flutter_segment/src/segment_config.dart';
-import 'package:flutter_segment/src/segment_default_options.dart';
-import 'package:flutter_segment/src/segment_platform_interface.dart';
+import 'package:flutter_segment_sdk/src/segment_config.dart';
+import 'package:flutter_segment_sdk/src/segment_default_options.dart';
+import 'package:flutter_segment_sdk/src/segment_platform_interface.dart';
 
-export 'package:flutter_segment/src/segment_default_options.dart';
-export 'package:flutter_segment/src/segment_observer.dart';
+export 'package:flutter_segment_sdk/src/segment_default_options.dart';
+export 'package:flutter_segment_sdk/src/segment_observer.dart';
 
 class Segment {
   const Segment._();

@@ -1,1 +1,1 @@
-export 'package:flutter_segment/src/segment_web.dart';
+export 'package:flutter_segment_sdk/src/segment_web.dart';

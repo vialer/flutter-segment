@@ -1,5 +1,5 @@
 import 'package:flutter/widgets.dart';
-import 'package:flutter_segment/flutter_segment.dart';
+import 'package:flutter_segment_sdk/flutter_segment.dart';
 
 typedef ScreenNameExtractor = String? Function(RouteSettings settings);
 

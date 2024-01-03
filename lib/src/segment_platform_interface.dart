@@ -1,5 +1,5 @@
-import 'package:flutter_segment/src/segment_config.dart';
-import 'package:flutter_segment/src/segment_method_channel.dart';
+import 'package:flutter_segment_sdk/src/segment_config.dart';
+import 'package:flutter_segment_sdk/src/segment_method_channel.dart';
 
 abstract class SegmentPlatform {
   /// The default instance of [SegmentPlatform] to use
