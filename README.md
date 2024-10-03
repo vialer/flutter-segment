@@ -115,7 +115,7 @@ void main() {
 
 ### Android _(Deprecated*)_
 ```xml
-<manifest xmlns:android="http://schemas.android.com/apk/res/android" package="com.example.flutter_segment_example">
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" package="com.example.flutter_segment_analytics_example">
     <application>
         <activity>
             [...]
