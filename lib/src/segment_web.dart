@@ -6,7 +6,7 @@ import 'package:flutter_web_plugins/flutter_web_plugins.dart';
 class SegmentWeb {
   static void registerWith(Registrar registrar) {
     final MethodChannel channel = MethodChannel(
-      'flutter_segment',
+      'flutter_segment_analytics',
       const StandardMethodCodec(),
       registrar, // the registrar is used as the BinaryMessenger
     );
