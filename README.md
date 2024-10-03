@@ -1,5 +1,5 @@
 # Segment plugin
-[![Pub Version](https://img.shields.io/pub/v/flutter_segment)](https://pub.dev/packages/flutter_segment_sdk)
+[![Pub Version](https://img.shields.io/pub/v/flutter_segment)](https://pub.dev/packages/flutter_segment_analytics)
 [![style: lint](https://img.shields.io/badge/style-lint-4BC0F5.svg)](https://pub.dev/packages/lint)
 
 This library was originally created by [claimsforce-gmbh](https://github.com/claimsforce-gmbh) and then maintained by [la-haus](https://github.com/la-haus). We are extremely grateful for the work they have done building and maintaining this package.
@@ -11,7 +11,7 @@ We want to prepare flutter-segment for the future!
 Please have a look at [this issue](https://github.com/claimsforce-gmbh/flutter-segment/issues/46) and let us know what you think.
 
 ## Usage
-To use this plugin, add `flutter_segment` as a [dependency in your pubspec.yaml file](https://flutter.io/platform-plugins/).
+To use this plugin, add `flutter_segment_analytics` as a [dependency in your pubspec.yaml file](https://flutter.io/platform-plugins/).
 
 ### Important note for iOS usage
 Since version `3.5.0` we are forcing all users to use `use_frameworks!` within the [`Podfile`](https://github.com/claimsforce-gmbh/flutter-segment/blob/master/example/ios/Podfile#L31) due to import issues of some 3rd party dependencies.
@@ -37,7 +37,7 @@ Since version `3.5.0` we are forcing all users to use `use_frameworks!` within t
 ### Example
 ``` dart
 import 'package:flutter/material.dart';
-import 'package:flutter_segment/flutter_segment.dart';
+import 'package:flutter_segment_analytics/flutter_segment.dart';
 
 void main() => runApp(MyApp());
 
@@ -115,7 +115,7 @@ void main() {
 
 ### Android _(Deprecated*)_
 ```xml
-<manifest xmlns:android="http://schemas.android.com/apk/res/android" package="com.example.flutter_segment_example">
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" package="com.example.flutter_segment_analytics_example">
     <application>
         <activity>
             [...]

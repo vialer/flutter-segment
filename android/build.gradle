@@ -1,4 +1,4 @@
-group 'com.example.flutter_segment'
+group 'com.example.flutter_segment_analytics'
 version '3.12.1'
 
 buildscript {
@@ -23,7 +23,7 @@ rootProject.allprojects {
 apply plugin: 'com.android.library'
 
 android {
-    namespace 'com.example.flutter_segment'
+    namespace 'com.example.flutter_segment_analytics'
     compileSdkVersion 34
 
     defaultConfig {

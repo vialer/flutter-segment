@@ -1,5 +1,5 @@
 name: flutter_segment_example
-description: Demonstrates how to use the flutter_segment plugin.
+description: Demonstrates how to use the flutter_segment_analytics plugin.
 publish_to: 'none'
 
 version: 0.0.1+1
@@ -13,7 +13,7 @@ dependencies:
   cupertino_icons: ^1.0.3
   flutter:
     sdk: flutter
-  flutter_segment_sdk:
+  flutter_segment_analytics:
     path: ../
 
 dev_dependencies:

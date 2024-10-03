@@ -6,7 +6,7 @@ import 'package:flutter_web_plugins/flutter_web_plugins.dart';
 class SegmentWeb {
   static void registerWith(Registrar registrar) {
     final MethodChannel channel = MethodChannel(
-      'flutter_segment',
+      'flutter_segment_analytics',
       const StandardMethodCodec(),
       registrar, // the registrar is used as the BinaryMessenger
     );
@@ -14,56 +14,50 @@ class SegmentWeb {
     channel.setMethodCallHandler(instance.handleMethodCall);
   }
 
-  Future<dynamic> handleMethodCall(MethodCall call) async {
-    final analytics =
-        JsObject.fromBrowserObject(context['analytics'] as Object);
+Future<dynamic> handleMethodCall(MethodCall call) async {
+    final JsObject analytics = JsObject.fromBrowserObject(context['analytics'] as Object);
+    final Map<String, dynamic> args = call.arguments as Map<String, dynamic>;
+
     switch (call.method) {
       case 'identify':
         analytics.callMethod('identify', [
-          call.arguments['userId'],
-          JsObject.jsify(call.arguments['traits'] as Object),
-          JsObject.jsify(call.arguments['options'] as Object),
+          args['userId'],
+          JsObject.jsify(args['traits'] as Object),
+          JsObject.jsify(args['options'] as Object),
         ]);
-        break;
       case 'track':
         analytics.callMethod('track', [
-          call.arguments['eventName'],
-          JsObject.jsify(call.arguments['properties'] as Object),
-          JsObject.jsify(call.arguments['options'] as Object),
+          args['eventName'],
+          JsObject.jsify(args['properties'] as Object),
+          JsObject.jsify(args['options'] as Object),
         ]);
-        break;
       case 'screen':
         analytics.callMethod('page', [
-          call.arguments['screenName'],
-          JsObject.jsify(call.arguments['properties'] as Object),
-          JsObject.jsify(call.arguments['options'] as Object),
+          args['screenName'],
+          JsObject.jsify(args['properties'] as Object),
+          JsObject.jsify(args['options'] as Object),
         ]);
-        break;
       case 'group':
         analytics.callMethod('group', [
-          call.arguments['groupId'],
-          JsObject.jsify(call.arguments['traits'] as Object),
-          JsObject.jsify(call.arguments['options'] as Object),
+          args['groupId'],
+          JsObject.jsify(args['traits'] as Object),
+          JsObject.jsify(args['options'] as Object),
         ]);
-        break;
       case 'alias':
         analytics.callMethod('alias', [
-          call.arguments['alias'],
-          JsObject.jsify(call.arguments['options'] as Object),
+          args['alias'],
+          JsObject.jsify(args['options'] as Object),
         ]);
-        break;
       case 'getAnonymousId':
-        final user = analytics.callMethod('user');
+        final JsObject user = analytics.callMethod('user') as JsObject;
         final anonymousId = user.callMethod('anonymousId');
         return anonymousId;
       case 'reset':
         analytics.callMethod('reset');
-        break;
       case 'debug':
         analytics.callMethod('debug', [
-          call.arguments['debug'],
+          args['debug'],
         ]);
-        break;
       default:
         throw PlatformException(
           code: 'Unimplemented',
