@@ -1,4 +1,4 @@
-name: flutter_segment_sdk
+name: flutter_segment_analytics
 description: Flutter implementation of Segment Analytics for iOS, Android and Web
 version: 3.13.2
 homepage: https://vialerapp.com
@@ -26,7 +26,7 @@ flutter:
   plugin:
     platforms:
       android:
-        package: com.example.flutter_segment
+        package: com.example.flutter_segment_analytics
         pluginClass: FlutterSegmentPlugin
       ios:
         pluginClass: FlutterSegmentPlugin
