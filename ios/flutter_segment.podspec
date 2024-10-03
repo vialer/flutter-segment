@@ -2,7 +2,7 @@
 # To learn more about a Podspec see http://guides.cocoapods.org/syntax/podspec.html
 #
 Pod::Spec.new do |s|
-  s.name             = 'flutter_segment'
+  s.name             = 'flutter_segment_analytics'
   s.version          = '3.13.1'
   s.summary          = 'Segment.io plugin for Flutter'
   s.description      = <<-DESC

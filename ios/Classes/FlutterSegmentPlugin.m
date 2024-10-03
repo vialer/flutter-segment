@@ -12,7 +12,7 @@ static BOOL wasSetupFromFile = NO;
 
 + (void)registerWithRegistrar:(NSObject<FlutterPluginRegistrar>*)registrar {
     FlutterMethodChannel* channel = [FlutterMethodChannel
-      methodChannelWithName:@"flutter_segment"
+      methodChannelWithName:@"flutter_segment_analytics"
       binaryMessenger:[registrar messenger]];
     FlutterSegmentPlugin* instance = [[FlutterSegmentPlugin alloc] init];
     

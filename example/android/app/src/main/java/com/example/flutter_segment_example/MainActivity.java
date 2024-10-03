@@ -1,4 +1,4 @@
-package com.example.flutter_segment_example;
+package com.example.flutter_segment_analytics_example;
 
 import io.flutter.embedding.android.FlutterActivity;
 
