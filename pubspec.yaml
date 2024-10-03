@@ -7,8 +7,8 @@ issue_tracker: https://github.com/vialer/flutter-library-segment/issues
 documentation: https://github.com/vialer/flutter-library-segment#readme
 
 environment:
-  sdk: '>=2.12.0 <4.0.0'
-  flutter: ">=1.12.13+hotfix.4"
+  sdk: '>=3.3.0 <4.0.0'
+  flutter: ">=3.1.0"
 
 dependencies:
   flutter:
@@ -20,7 +20,7 @@ dependencies:
 dev_dependencies:
   flutter_test:
     sdk: flutter
-  lint: 1.6.0
+  lint: ^2.3.0
 
 flutter:
   plugin:
