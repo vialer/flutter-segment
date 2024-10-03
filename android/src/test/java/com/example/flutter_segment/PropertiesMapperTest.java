@@ -1,4 +1,4 @@
-package com.example.flutter_segment;
+package com.example.flutter_segment_analytics;
 
 import com.segment.analytics.Properties;
 

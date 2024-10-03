@@ -1,4 +1,4 @@
-package com.example.flutter_segment;
+package com.example.flutter_segment_analytics;
 
 import android.content.Context;
 import android.content.pm.ApplicationInfo;
@@ -45,7 +45,7 @@ public class FlutterSegmentPlugin implements MethodCallHandler, FlutterPlugin {
   private void setupChannels(Context applicationContext, BinaryMessenger messenger) {
     this.applicationContext = applicationContext;
 
-    methodChannel = new MethodChannel(messenger, "flutter_segment");
+    methodChannel = new MethodChannel(messenger, "flutter_segment_analytics");
     // register the channel to receive calls
     methodChannel.setMethodCallHandler(this);
 
