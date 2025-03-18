@@ -1,3 +1,6 @@
+## 3.13.5
+- Added a namespace for Gradle 8 support
+
 ## 3.13.4
 - iOS fixes
 
